@@ -8,5 +8,4 @@ class Trail
     @length = details[:length].to_f
     @level = details[:level]
   end
-
 end
