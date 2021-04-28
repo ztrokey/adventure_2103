@@ -89,11 +89,12 @@ RSpec.describe Park do
       park2.add_trail(trail5)
       park2.add_trail(trail6)
 
-      # expected1 = {:easy=>["Grand Wash"],
-      #             :moderate=>["Cohab Canyon"],
-      #             :strenuous=>["Chimney Rock Loop"]}
-      expected2 = 4
-      # expect(park1.trails_by_level).to eq(expected1)
+      expected1 = {:easy=>["Grand Wash"],
+                  :moderate=>["Cohab Canyon"],
+                  :strenuous=>["Chimney Rock Loop"]}
+      expected2 = {:easy=>["Rim Trail"],
+                   :moderate=>["Queen's/Navajo Loop", "Tower Bridge"]}
+      expect(park1.trails_by_level).to eq(expected1)
       expect(park2.trails_by_level).to eq(expected2)
     end
   end
