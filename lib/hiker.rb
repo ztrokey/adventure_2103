@@ -35,6 +35,6 @@ class Hiker
   end
 
   def favorite_snack
-    
+    @snacks.key(@snacks.values.max)
   end
 end

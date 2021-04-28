@@ -74,7 +74,9 @@ RSpec.describe Hiker do
       hiker = Hiker.new('Dora', :moderate)
       hiker.pack('water', 1)
       hiker.pack('water', 1)
-      hiker.pack('trail mix', 3)
+      hiker.pack('trail mix', 5)
+      hiker.pack('apple',4)
+      hiker.pack('oranges', 3)
 
       expect(hiker.favorite_snack).to eq('trail mix')
     end
