@@ -1,3 +1,4 @@
+require 'rspec'
 require './lib/park'
 require './lib/trail'
 

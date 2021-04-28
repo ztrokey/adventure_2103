@@ -1,3 +1,4 @@
+require 'rspec'
 require './lib/trail'
 
 RSpec.describe Trail do
